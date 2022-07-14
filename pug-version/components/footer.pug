@@ -1,0 +1,21 @@
+footer.footer
+    .grid.grid-cols-3
+        .footer-left
+            h4 Programs
+                a Kindergarten
+                a Primary 
+                a Junior High
+        .footer-center
+            h4 Pages
+                a Home 
+                a About 
+                a Programs 
+        .footer-right
+            h4 Contact Us
+                form(action="")
+                    input#form-inquiry-name(type="text", name="form-inquiry-name", placeholder="What's your name?")
+                    input#form-inquiry-email(type="email", name="form-inquiry-email", placeholder="Email")
+                    textarea#form-inquiry-text(name="form-inquiry-text", cols="30", rows="10")
+                    input(type="submit", value="Submit") 
+    .grid
+        .footer-center.col-span-full
