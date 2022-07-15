@@ -1,0 +1,28 @@
+-var footer_grid = ['grid-rows-1 md:grid-cols-3 p-10']
+-var footer = ['bg-crimson']
+-var footer_link = ['text-white mx-5 my-2 cursor-pointer']
+-var h4 = ['text-xl font-extrabold text-white']
+-var button = [`cursor-pointer p-5 bg-crimson text-white shadow-xl font-extrabold hover:bg-white hover:text-crimson`]
+
+footer.footer(class=footer)
+    .grid(class=footer_grid)
+        .footer-left.flex.flex-col
+            h4(class=h4) Programs
+            a(class=footer_link,href="/programs/kinder") Kindergarten
+            a(class=footer_link,href="/programs/primary") Primary 
+            a(class=footer_link,href="/programs/juniorhigh") Junior High
+        .footer-center.flex.flex-col
+            h4(class=h4) Pages
+            a(class=footer_link,href="/") Home 
+            a(class=footer_link,href="/about") About 
+            a(class=footer_link,href="/programs") Programs 
+        .footer-right
+            h4(class=h4) Contact Us
+            form(action="").grid.grid-cols-1.gap-4.my-5
+                input#form-inquiry-name.p-2(type="text", name="form-inquiry-name", placeholder="What's your name?")
+                input#form-inquiry-email.p-2(type="email", name="form-inquiry-email", placeholder="Email")
+                textarea#form-inquiry-text.p-2(name="form-inquiry-text", cols="10", rows="5")
+                input(type="submit", value="Submit",class=button) 
+    .grid
+        .footer-center.col-span-full.text-center.p-14.text-white
+            | © Baliuag Cross and Flame Academy 2022
