@@ -1,1 +1,18 @@
+meta(name="viewport", content="width=device-width, initial-scale=1.0")
 script(src="https://cdn.tailwindcss.com")
+link(rel="stylesheet", href="css/bcfa.css")
+script.
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crimson: '#dc143c',
+          }
+        }
+      }
+    }
+script.
+    function showNav(){
+        let nav = document.getElementById("header-nav-links");
+        nav.classList.toggle("hidden");
+    }

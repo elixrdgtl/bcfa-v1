@@ -1,6 +1,14 @@
-.hero
-    .hero-center
-        h1 Baliuag Cross and Flame Academy
-        p Train up a child in the way that he should go, so when he is old, he will not depart from it.
-    .hero-left
-    .hero-right
+-var hero = ['w-full h-full bg-cover bg-fixed p-10']
+-var button = [`my-10 p-5 bg-crimson text-white shadow-xl font-extrabold hover:bg-white hover:text-crimson`]
+
+.hero(class=hero,style='background-image:url("./media/bcfa.jpg")')
+    .flex.items-center.h-full.grid.grid-cols-1
+        .hero-content
+            h1.text-white.text-5xl.font-extrabold.drop-shadow-lg 
+                | Baliuag Cross and Flame Academy
+            p.my-5.text-white.font-bold.text-xl 
+                | Train up a child in the way that he should go, so when he is old, he will not depart from it.
+            button(class=button) See Programs
+        .hero-call-to-action
+            
+            
