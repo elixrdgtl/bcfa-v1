@@ -17,6 +17,24 @@ app.use(express.static(publicDirectoryPath))
 app.get("/", (req, res) => {
     res.render("index");
 })
+app.get("/programs", (req,res)=>{
+    res.render("pages/programs");
+})
+app.get("/programs/primary", (req,res)=>{
+    res.render("pages/programs/primary");
+})
+app.get("/programs/kinder", (req,res)=>{
+    res.render("pages/programs/kinder");
+})
+app.get("/programs/junior", (req,res)=>{
+    res.render("pages/programs/junior");
+})
+app.get("/about", (req,res)=>{
+    res.render("pages/about");
+})
+app.get("/contact", (req,res)=>{
+    res.render("pages/contact");
+})
 
 app.listen(port, () => {
     console.log(`Server started listening at ${port}`)
