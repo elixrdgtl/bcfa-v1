@@ -1,0 +1,30 @@
+{
+  "name": "bcfa-v1",
+  "version": "0.1.0",
+  "description": "BCFA website using Pug (Jade) as HTML engine",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elixrdgtl/bcfa-v1.git"
+  },
+  "keywords": [
+    "BCFA",
+    "pug",
+    "js",
+    "css",
+    "tailwindcss"
+  ],
+  "author": "elixrdev, ezekielg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elixrdgtl/bcfa-v1/issues"
+  },
+  "homepage": "https://github.com/elixrdgtl/bcfa-v1#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
+  }
+}
