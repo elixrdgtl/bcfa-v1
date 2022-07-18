@@ -1,14 +1,15 @@
--var hero = ['w-full h-full bg-cover bg-fixed p-10']
--var button = [`my-10 p-5 bg-crimson text-white shadow-xl font-extrabold hover:bg-white hover:text-crimson`]
+-var hero = ['w-full h-full']
+-var button = [`transform p-6 bg-crimson transition text-white shadow-xl font-extrabold hover:bg-white hover:text-crimson hover:translate-x-3`]
 
-.hero(class=hero,style='background-image:url("./media/bcfa.jpg")')
-    .flex.items-center.h-full.grid.grid-cols-1
-        .hero-content
+.hero(class=hero)
+    .absolute.w-full.h-full.bg-fixed.bg-cover.z-0(style='background-image:url("./media/bcfa.jpg")')
+    .flex.items-center.h-screen.grid.grid-cols-1.z-10.inset-0.p-10.backdrop-brightness-50
+        .hero-content.z-10
             h1.text-white.text-5xl.font-extrabold.drop-shadow-lg 
                 | Baliuag Cross and Flame Academy
-            p.my-5.text-white.font-bold.text-xl 
+            p.my-6.text-white.font-bold.text-xl 
                 | Train up a child in the way that he should go, so when he is old, he will not depart from it.
-            button(class=button) See Programs
-        .hero-call-to-action
-            
+        .hero-call-to-action.z-10
+            a(class=button,href="/programs") See Programs
+    
             
