@@ -1,0 +1,15 @@
+-
+    var cards = [
+        {title:"Kinder",body:"Young learners are the cornerstone of our education. Catering to ages 3-6, our kindergarten class is filled with fun and integration with excellent teaching staff."},
+        {title:"Primary",body:"Elementary learners will face the world through a robust educational foundation and Christian upbringing, walking with wisdom and kindness."},
+        {title:"Junior High",body:"On the edge of excellence, Junior Highschool students are prepared for the challenging tasks ahead. "},
+    ] 
+.section
+    .p-10
+        h1.text-5xl.font-extrabold Programs
+        .cards.grid.grid-cols-3.gap-6
+            each c in cards
+                .card
+                    .card-image
+                    .card-title.text-2xl.font-bold.py-6= c.title
+                    .card-body.text-justify= c.body  
